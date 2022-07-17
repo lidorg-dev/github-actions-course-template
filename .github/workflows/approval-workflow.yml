@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Label Approve Pull Request
-        uses: pullreminders/label-when-approved-action@1.0.7
+        uses: pullreminders/label-when-approved-action@master
         env:
           APPROVALS: "1"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
