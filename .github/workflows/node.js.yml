@@ -41,7 +41,7 @@ jobs:
       env:
         CI: true
     - name: upload package
-    - uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
          name: my-package
          path: public/
