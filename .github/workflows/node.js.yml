@@ -20,10 +20,11 @@ jobs:
        npm install
        npm run build
   test:
-    runs-on: windows-2019
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [12.x, 14.x]
+        os: [ubuntu-latest, windows-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -35,6 +36,7 @@ jobs:
     - name: npm install and test
       run: |
        npm install
+       npm run build
        npm test
       env:
         CI: true
