@@ -1,0 +1,9 @@
+# This is a basic workflow to help you get started with Actions
+
+name: approval-workflow
+
+on: pull_request_review
+
+jobs:
+  labelWhenApproved:
+    runs-on: ubuntu-latest
